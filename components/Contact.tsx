@@ -40,8 +40,8 @@ export default function Contact() {
     {
       icon: '📧',
       label: 'Email',
-      value: 'your.email@example.com',
-      link: 'mailto:your.email@example.com',
+      value: 'jannyxxy@gmail.com',
+      link: 'mailto:jannyxxy@gmail.com',
     },
     {
       icon: '💼',
@@ -52,8 +52,8 @@ export default function Contact() {
     {
       icon: '🐙',
       label: 'GitHub',
-      value: 'github.com/yourusername',
-      link: 'https://github.com/yourusername',
+      value: 'github.com/Toorpeedoo',
+      link: 'https://github.com/Toorpeedoo',
     },
     {
       icon: '📱',
