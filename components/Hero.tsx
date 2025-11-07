@@ -4,21 +4,21 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 via-white to-primary-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
         <div className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
           <div className="text-center md:text-left order-2 md:order-1">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-800 dark:text-white mb-4 sm:mb-6">
               Hi, I&apos;m{' '}
               <span className="text-primary-600 dark:text-primary-400">
                 Lemuel Orpilla
               </span>
             </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-4 sm:mb-6 md:mb-8">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 dark:text-gray-300 mb-4 sm:mb-6 md:mb-8">
               Full Stack Developer | Problem Solver | Creative Thinker
             </p>
-            <p className="text-sm sm:text-base md:text-lg text-gray-500 dark:text-gray-400 mb-6 sm:mb-8 md:mb-12">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 mb-6 sm:mb-8 md:mb-12">
               I build beautiful, functional, and user-friendly web applications that
               make a difference. Passionate about clean code and innovative
               solutions.
@@ -39,14 +39,15 @@ export default function Hero() {
             </div>
           </div>
           <div className="flex justify-center md:justify-end order-1 md:order-2 mb-6 md:mb-0">
-            <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96">
+            <div className="relative inline-block max-w-[280px] sm:max-w-[320px] md:max-w-[400px] lg:max-w-[480px]">
               <Image
                 src="/profile.png"
                 alt="Lemuel Orpilla"
-                fill
-                className="rounded-full object-cover shadow-2xl"
+                width={600}
+                height={800}
+                className="w-full h-auto rounded-lg shadow-2xl border-4 border-white dark:border-gray-800 ring-2 ring-gray-200 dark:ring-gray-700"
                 priority
-                sizes="(max-width: 640px) 192px, (max-width: 768px) 224px, (max-width: 1024px) 288px, (max-width: 1280px) 320px, 384px"
+                sizes="(max-width: 640px) 280px, (max-width: 768px) 320px, (max-width: 1024px) 400px, 480px"
               />
             </div>
           </div>
