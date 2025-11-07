@@ -20,9 +20,8 @@ export default function Hero() {
               Full Stack Developer | Problem Solver | Creative Thinker
             </p>
             <p className="text-sm sm:text-base md:text-lg text-beige-300 mb-6 sm:mb-8 md:mb-12 leading-relaxed">
-              I build beautiful, functional, and user-friendly web applications that
-              make a difference. Passionate about clean code and innovative
-              solutions.
+            I build clean, functional, and user-friendly web applications focused on real-world impact. 
+            I’m passionate about writing maintainable code and creating practical, innovative solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
               <a
