@@ -59,8 +59,8 @@ export default function Contact() {
     {
       icon: '📱',
       label: 'Phone',
-      value: '+639610188542',
-      link: 'tel:+639610188542',
+      value: '+69tutunogtunog',
+      link: 'tel:+69tutunogtunog',
     },
   ]
 
@@ -87,25 +87,35 @@ export default function Contact() {
               Contact Information
             </h3>
             <div className="space-y-4">
-              {contactInfo.map((info, index) => (
-                <a
-                  key={index}
-                  href={info.link}
-                  target={info.link.startsWith('http') ? '_blank' : undefined}
-                  rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  className="flex items-center p-4 bg-brown-900/40 backdrop-blur-sm border border-amber-800/30 rounded-lg hover:bg-brown-900/60 hover:shadow-warm-glow transition-all duration-300 group"
-                >
-                  <span className="text-3xl mr-4">{info.icon}</span>
-                  <div>
-                    <p className="text-sm text-beige-400">
-                      {info.label}
-                    </p>
-                    <p className="text-amber-400 font-medium group-hover:text-amber-300">
-                      {info.value}
-                    </p>
-                  </div>
-                </a>
-              ))}
+              {contactInfo.map((info, index) => {
+                const isPhone = info.label === 'Phone'
+                const Component = isPhone ? 'div' : 'a'
+                const props = isPhone
+                  ? {}
+                  : {
+                      href: info.link,
+                      target: info.link.startsWith('http') ? '_blank' : undefined,
+                      rel: info.link.startsWith('http') ? 'noopener noreferrer' : undefined,
+                    }
+                
+                return (
+                  <Component
+                    key={index}
+                    {...props}
+                    className="flex items-center p-4 bg-brown-900/40 backdrop-blur-sm border border-amber-800/30 rounded-lg hover:bg-brown-900/60 hover:shadow-warm-glow transition-all duration-300 group"
+                  >
+                    <span className="text-3xl mr-4">{info.icon}</span>
+                    <div>
+                      <p className="text-sm text-beige-400">
+                        {info.label}
+                      </p>
+                      <p className="text-amber-400 font-medium group-hover:text-amber-300">
+                        {info.value}
+                      </p>
+                    </div>
+                  </Component>
+                )
+              })}
             </div>
           </div>
           <div>
