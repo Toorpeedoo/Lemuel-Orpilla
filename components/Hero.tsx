@@ -8,14 +8,14 @@ export default function Hero() {
         <div className="mb-8">
           <div className="inline-block mb-6">
             <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 mx-auto flex items-center justify-center text-5xl font-bold text-white shadow-xl">
-              JD
+              LO
             </div>
           </div>
         </div>
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6">
           Hi, I'm{' '}
           <span className="text-primary-600 dark:text-primary-400">
-            Your Name
+            Lemuel Orpilla
           </span>
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
