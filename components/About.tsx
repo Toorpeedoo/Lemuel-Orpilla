@@ -17,7 +17,7 @@ export default function About() {
               Who I Am
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-              I'm a passionate developer with a love for creating elegant
+              I&apos;m a passionate developer with a love for creating elegant
               solutions to complex problems. With expertise in modern web
               technologies, I bring ideas to life through clean, efficient code.
             </p>
@@ -28,7 +28,7 @@ export default function About() {
               creatively.
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies,
+              When I&apos;m not coding, you can find me exploring new technologies,
               contributing to open-source projects, or sharing knowledge with the
               developer community.
             </p>
@@ -39,7 +39,7 @@ export default function About() {
                 Education
               </h4>
               <p className="text-gray-700 dark:text-gray-300">
-                Bachelor's Degree in Computer Science
+                Bachelor&apos;s Degree in Computer Science
               </p>
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 University Name, Year
