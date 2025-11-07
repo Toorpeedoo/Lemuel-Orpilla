@@ -47,14 +47,14 @@ export default function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-lg'
+          ? 'bg-espresso-200/95 backdrop-blur-md shadow-lg border-b border-amber-900/30'
           : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <span className="text-xl font-bold text-primary-600 dark:text-primary-400">
+            <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-amber">
               Portfolio
             </span>
           </div>
@@ -64,10 +64,10 @@ export default function Navigation() {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 ${
                     activeSection === item.id
-                      ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20'
-                      : 'text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400'
+                      ? 'text-amber-400 bg-amber-900/20 shadow-amber-glow'
+                      : 'text-beige-300 hover:text-amber-400 hover:bg-amber-900/10'
                   }`}
                 >
                   {item.label}

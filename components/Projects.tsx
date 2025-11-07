@@ -47,15 +47,16 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-20 bg-gray-50 dark:bg-gray-900"
+      className="py-20 bg-espresso-200 relative"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-brown-900/10 to-transparent"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-beige-100 mb-4">
             Featured Projects
           </h2>
-          <div className="w-24 h-1 bg-primary-600 mx-auto"></div>
-          <p className="text-gray-600 dark:text-gray-400 mt-6 max-w-2xl mx-auto">
+          <div className="w-24 h-1 bg-gradient-amber mx-auto shadow-amber-glow"></div>
+          <p className="text-beige-300 mt-6 max-w-2xl mx-auto">
             A selection of projects that showcase my skills and expertise
           </p>
         </div>
@@ -63,23 +64,23 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="bg-brown-900/40 backdrop-blur-sm border border-amber-800/30 rounded-lg shadow-lg overflow-hidden hover:shadow-gold-glow transition-all duration-300"
             >
-              <div className="p-8 text-6xl text-center bg-gradient-to-br from-primary-100 to-primary-200 dark:from-primary-900 dark:to-primary-800">
+              <div className="p-8 text-6xl text-center bg-gradient-amber/20">
                 {project.image}
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                <h3 className="text-xl font-semibold text-amber-400 mb-3">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                <p className="text-beige-200 mb-4">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-3 py-1 text-xs font-medium bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-full"
+                      className="px-3 py-1 text-xs font-medium bg-amber-900/40 text-amber-300 border border-amber-700/50 rounded-full"
                     >
                       {tech}
                     </span>
