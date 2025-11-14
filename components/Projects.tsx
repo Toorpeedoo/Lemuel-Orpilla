@@ -8,27 +8,6 @@ export default function Projects() {
       image: '🛒',
     },
     {
-      title: 'Task Management App',
-      description:
-        'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'WebSockets'],
-      image: '📋',
-    },
-    {
-      title: 'Social Media Dashboard',
-      description:
-        'Analytics dashboard for social media metrics with data visualization, reporting, and insights.',
-      technologies: ['React', 'D3.js', 'Python', 'FastAPI'],
-      image: '📊',
-    },
-    {
-      title: 'Weather Forecast App',
-      description:
-        'Real-time weather forecasting application with location-based services and interactive maps.',
-      technologies: ['Next.js', 'TypeScript', 'OpenWeather API', 'Tailwind CSS'],
-      image: '🌤️',
-    },
-    {
       title: 'Learning Management System',
       description:
         'Platform for online courses with video streaming, progress tracking, and certification.',
@@ -41,6 +20,27 @@ export default function Projects() {
         'Personal portfolio website showcasing projects, skills, and experience with modern design.',
       technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
       image: '💼',
+    },
+    {
+      title: 'Vento Inventory System',
+      description:
+        'Comprehensive inventory management system with real-time tracking, reporting, and automated stock control.',
+      technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Tailwind CSS'],
+      image: '📦',
+    },
+    {
+      title: 'Food Generator Website',
+      description:
+        'Interactive meal planning and recipe generator that creates personalized meal suggestions based on preferences and dietary requirements.',
+      technologies: ['React', 'Next.js', 'API Integration', 'Tailwind CSS'],
+      image: '🍽️',
+    },
+    {
+      title: 'FiveM (GTA) Projects',
+      description:
+        'Custom multiplayer scripts and resources for FiveM servers, including custom systems, UI elements, and gameplay enhancements.',
+      technologies: ['Lua', 'JavaScript', 'FiveM', 'MySQL'],
+      image: '🎮',
     },
   ]
 
