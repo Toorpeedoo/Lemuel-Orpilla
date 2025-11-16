@@ -27,7 +27,7 @@ export default function Projects() {
         'Comprehensive inventory management system with real-time tracking, reporting, and automated stock control.',
       technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Tailwind CSS'],
       image: '📦',
-      url: 'https://ventosystem.vercel.app/',
+      url: 'https://vento-system.vercel.app/',
     },
     {
       title: 'Food Generator Website',
