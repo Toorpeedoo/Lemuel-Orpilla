@@ -27,6 +27,7 @@ export default function Projects() {
         'Comprehensive inventory management system with real-time tracking, reporting, and automated stock control.',
       technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Tailwind CSS'],
       image: '📦',
+      url: 'https://ventosystem.vercel.app/',
     },
     {
       title: 'Food Generator Website',
@@ -61,34 +62,53 @@ export default function Projects() {
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-brown-900/40 backdrop-blur-sm border border-amber-800/30 rounded-lg shadow-lg overflow-hidden hover:shadow-gold-glow transition-all duration-300"
-            >
-              <div className="p-8 text-6xl text-center bg-gradient-amber/20">
-                {project.image}
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-amber-400 mb-3">
-                  {project.title}
-                </h3>
-                <p className="text-beige-200 mb-4">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="px-3 py-1 text-xs font-medium bg-amber-900/40 text-amber-300 border border-amber-700/50 rounded-full"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+          {projects.map((project, index) => {
+            const CardContent = () => (
+              <div
+                className={`bg-brown-900/40 backdrop-blur-sm border border-amber-800/30 rounded-lg shadow-lg overflow-hidden hover:shadow-gold-glow transition-all duration-300 ${
+                  project.url ? 'cursor-pointer' : ''
+                }`}
+              >
+                <div className="p-8 text-6xl text-center bg-gradient-amber/20">
+                  {project.image}
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-amber-400 mb-3">
+                    {project.title}
+                  </h3>
+                  <p className="text-beige-200 mb-4">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="px-3 py-1 text-xs font-medium bg-amber-900/40 text-amber-300 border border-amber-700/50 rounded-full"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            )
+
+            return project.url ? (
+              <a
+                key={index}
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <CardContent />
+              </a>
+            ) : (
+              <div key={index}>
+                <CardContent />
+              </div>
+            )
+          })}
         </div>
       </div>
     </section>
