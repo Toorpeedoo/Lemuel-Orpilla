@@ -35,6 +35,7 @@ export default function Projects() {
         'Interactive meal planning and recipe generator that creates personalized meal suggestions based on preferences and dietary requirements.',
       technologies: ['React', 'Next.js', 'API Integration', 'Tailwind CSS'],
       image: '🍽️',
+      url: 'https://fileats-revise.vercel.app/',
     },
     {
       title: 'FiveM (GTA) Projects',
